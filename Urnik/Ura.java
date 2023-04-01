@@ -2,11 +2,22 @@ package Urnik;
 
 public class Ura {
     
-    for (int i = 0; i< steviloPredmetov; i++){
-        Predmet ime = new Predmet();
+    int cas;
+    Predmet predmet;
+
+
+    public Ura(int cas, Predmet predmet) {
+        this.cas = cas;
+        this.predmet = predmet;
     }
 
-    String cas;
+    int vrniCas(){
+        return cas;
+    }
+
+    Predmet vrniPredmet(){
+        return predmet;
+    }
 
 }
 

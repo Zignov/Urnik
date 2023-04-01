@@ -2,22 +2,28 @@ package Urnik;
 
 public class Predmet {
     
-    private String okrajsava;
+    public String okrajsava;
     private String ime;
     private String opis;
 
-    Predmet predmet = new Predmet();
+    public Predmet(String okrajsava, String ime, String opis){
+        this.okrajsava = okrajsava;
+        this.ime = ime;
+        this.opis = opis;
+    }
 
 
-    String vrniIme (String ime){
+    Predmet predmet = new Predmet(okrajsava, ime, opis);
+
+    public String vrniIme (String ime){
+        return(predmet.ime);
+    }
+
+    public String vrniOkrajsavo (String okrajsava){
         return(predmet.okrajsava);
     }
 
-    String vrniOkrajsavo (String okrajsava){
-        return(predmet.okrajsava);
-    }
-
-    String vrniOpis (String opis){
+    public String vrniOpis (String opis){
         return(predmet.opis);
     }
 
